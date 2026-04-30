@@ -3,21 +3,17 @@ import Icon from "../components/Icon.jsx";
 
 const WEBHOOK_URL = "https://workflows.mantracare.com/webhook/get-started-page";
 
-const buildWebhookUrl = (page, formData) => {
-  const buildWebhookPayload = (page, formData) => ({
-    page,
-    name: formData.name,
-    email: formData.email,
-    phone: "+91" + formData.phone,
-    concern: formData.concern,
-    preferred_language: formData.preferredLanguage,
-    preferred_time: formData.preferredTime,
-    source_url: window.location.href,
-    submitted_at: new Date().toISOString(),
-  });
-
-  return `${WEBHOOK_URL}?${params.toString()}`;
-};
+const buildWebhookPayload = (page, formData) => ({
+  page,
+  name: formData.name,
+  email: formData.email,
+  phone: "+91" + formData.phone,
+  concern: formData.concern,
+  preferred_language: formData.preferredLanguage,
+  preferred_time: formData.preferredTime,
+  source_url: window.location.href,
+  submitted_at: new Date().toISOString(),
+});
 
 export default function GetStarted() {
   const [form, setForm] = useState({

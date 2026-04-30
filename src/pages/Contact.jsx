@@ -47,8 +47,7 @@ export default function Contact() {
 
     try {
       await fetch(buildWebhookUrl("contact-us", form), {
-        method: "GET",
-        mode: "no-cors",
+        method: "POST"
       });
 
       setStatus("success");
