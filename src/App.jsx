@@ -8,6 +8,7 @@ import BookAppointment from "./pages/BookAppointment.jsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Terms from "./pages/Terms";
 import RefundPolicy from "./pages/RefundPolicy";
+import GetStarted from "./pages/GetStarted";
 
 function getCurrentPage() {
   const path = window.location.pathname;
@@ -18,6 +19,7 @@ function getCurrentPage() {
   if (path === "/privacy-policy") return <PrivacyPolicy />;
   if (path === "/terms") return <Terms />;
   if (path === "/refund-policy") return <RefundPolicy />;
+  if (path === "/get-started") return <GetStarted />;
 
   return <Home />;
 }
