@@ -4,7 +4,7 @@ import Icon from "../components/Icon.jsx";
 const WEBHOOK_URL = "https://workflows.mantracare.com/webhook/get-started-page";
 
 const buildWebhookUrl = (page, formData) => {
-  const params = new URLSearchParams({
+  const buildWebhookPayload = (page, formData) => ({
     page,
     name: formData.name,
     email: formData.email,
@@ -56,10 +56,17 @@ export default function GetStarted() {
     }
 
     try {
-      await fetch(buildWebhookUrl("get-started", form), {
-        method: "GET",
-        mode: "no-cors",
+      const response = await fetch(WEBHOOK_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(buildWebhookPayload("get-started", form)),
       });
+
+      if (!response.ok) {
+        throw new Error(`Webhook failed with status ${response.status}`);
+      }
 
       setStatus("success");
       setForm({
@@ -71,6 +78,7 @@ export default function GetStarted() {
         preferredTime: "",
       });
     } catch (submissionError) {
+      console.error("Webhook submission error:", submissionError);
       setStatus("error");
       setError("Something went wrong. Please try again or contact us on WhatsApp.");
     }
