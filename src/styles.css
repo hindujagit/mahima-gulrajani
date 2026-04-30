@@ -787,6 +787,87 @@ h3 {
   flex-wrap: wrap;
 }
 
+/* Feedback / Testimonials */
+.feedback-section {
+  overflow: hidden;
+  background: #FBF4F1;
+}
+
+.feedback-carousel {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 48px;
+}
+
+.feedback-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  animation: feedbackScroll 35s linear infinite;
+}
+
+.feedback-track:hover {
+  animation-play-state: paused;
+}
+
+.feedback-card {
+  width: 360px;
+  min-height: 260px;
+  flex: 0 0 auto;
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 32px;
+  box-shadow: 0 20px 50px rgba(33, 44, 60, 0.08);
+  border: 1px solid rgba(240, 154, 127, 0.18);
+}
+
+.quote-mark {
+  width: 46px;
+  height: 46px;
+  border-radius: 16px;
+  background: #fff0eb;
+  color: #f09a7f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.feedback-card p {
+  color: #4d5b72;
+  line-height: 1.7;
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+.feedback-card h3 {
+  font-size: 17px;
+  color: #273244;
+  margin: 0;
+}
+
+@keyframes feedbackScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .feedback-card {
+    width: 300px;
+  }
+
+  .feedback-track {
+    animation-duration: 45s;
+  }
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
   .hero-title {
@@ -924,82 +1005,6 @@ h3 {
     font-size: 44px;
   }
 
-  .feedback-section {
-  overflow: hidden;
-}
-
-.feedback-carousel {
-  width: 100%;
-  overflow: hidden;
-  margin-top: 3rem;
-}
-
-.feedback-track {
-  display: flex;
-  gap: 1.5rem;
-  width: max-content;
-  animation: feedbackScroll 35s linear infinite;
-}
-
-.feedback-track:hover {
-  animation-play-state: paused;
-}
-
-.feedback-card {
-  width: 360px;
-  min-height: 260px;
-  background: #ffffff;
-  border-radius: 28px;
-  padding: 2rem;
-  box-shadow: 0 20px 50px rgba(33, 44, 60, 0.08);
-  border: 1px solid rgba(240, 154, 127, 0.18);
-}
-
-.quote-mark {
-  width: 46px;
-  height: 46px;
-  border-radius: 16px;
-  background: #fff0eb;
-  color: #f09a7f;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.2rem;
-  font-weight: 800;
-  margin-bottom: 1.2rem;
-}
-
-.feedback-card p {
-  color: #4d5b72;
-  line-height: 1.7;
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
-}
-
-.feedback-card h3 {
-  font-size: 1.05rem;
-  color: #273244;
-  margin: 0;
-}
-
-@keyframes feedbackScroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-@media (max-width: 768px) {
-  .feedback-card {
-    width: 300px;
-  }
-
-  .feedback-track {
-    animation-duration: 45s;
-  }
-}
 
   .footer-inner {
     flex-direction: column;

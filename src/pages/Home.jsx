@@ -106,6 +106,7 @@ export default function Home() {
           }),
         }}
       />
+
       <section className="hero">
         <div className="hero-glow" />
         <div className="container hero-grid">
