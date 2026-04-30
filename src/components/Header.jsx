@@ -8,7 +8,7 @@ export default function Header() {
           <span className="brand-mark"><Icon name="sparkles" size={22} /></span>
           <span>
             <strong>Mahima Gulrajani</strong>
-            <small>Industrial Psychologist & Therapist</small>
+            <small>Psychologist & Therapist</small>
           </span>
         </a>
 

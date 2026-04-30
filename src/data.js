@@ -20,25 +20,31 @@ export const services = [
     icon: "brain",
     title: "Stress & Anxiety",
     image: "/images/service-stress-anxiety.jpg",
-    text: "Support for emotional overwhelm, anxiety, work pressure, and daily stress."
+    text: "Feeling overwhelmed, anxious, or mentally drained? Get support to manage stress, regulate emotions, and feel more in control."
   },
   {
     icon: "heart",
-    title: "Relationships & Grief",
+    title: "Relationships",
     image: "/images/service-relationship-grief.jpg",
-    text: "A safe space to process relationship concerns, grief, loss, and emotional pain."
+    text: "Struggling with communication, conflict, or recurring patterns in your relationships? Understand your dynamics, improve communication, and build healthier, more fulfilling connections."
   },
   {
     icon: "building",
-    title: "Workplace Well-being",
+    title: "Grief & Loss",
     image: "/images/service-workplace-wellbeing.jpg",
-    text: "Therapy and counselling for burnout, self-esteem, workplace stress, and adjustment."
+    text: "A safe space to process loss, cope with difficult emotions, and navigate life after change."
   },
   {
     icon: "child",
     title: "Child & Adolescent Support",
     image: "/images/service-child-adolescent.jpg",
-    text: "Experience with ADHD, learning difficulties, autism, emotional awareness, and parenting guidance."
+    text: "Support for ADHD, learning difficulties, autism, and emotional development along with parent guidance."
+  },
+  {
+    icon: "child",
+    title: "Self-Esteem & Personal Growth",
+    image: "/images/service-child-adolescent.jpg",
+    text: "Work on self-doubt, overthinking, emotional patterns, and building a healthier relationship with yourself."
   }
 ];
 
