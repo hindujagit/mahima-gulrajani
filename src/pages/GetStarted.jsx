@@ -101,7 +101,7 @@ export default function GetStarted() {
             <h2>Before we begin</h2>
             <p>
               This short form helps us understand your needs and guide you toward the right therapy support.
-              Sessions are virtual, confidential, and available in English, Hindi, and Marathi.
+              Sessions are virtual, confidential, and available in English and Hindi.
             </p>
 
             <div className="assessment-points">
@@ -178,7 +178,6 @@ export default function GetStarted() {
                   <option value="">Select language</option>
                   <option value="English">English</option>
                   <option value="Hindi">Hindi</option>
-                  <option value="Marathi">Marathi</option>
                 </select>
               </div>
 

@@ -65,7 +65,7 @@ const faqItems = [
   {
     question: "What languages does Mahima speak?",
     answer:
-      "Mahima offers therapy support in English, Hindi, and Marathi, so clients can choose the language they feel most comfortable using during sessions.",
+      "Mahima offers therapy support in English and Hindi, so clients can choose the language they feel most comfortable using during sessions.",
   },
   {
     question: "Is online therapy effective for stress, anxiety, and emotional concerns?",
